@@ -1,5 +1,7 @@
 // current time appended to header
 var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+var hour = new Date($.now())
+var now = hour.getHours()
 var time = $("#currentDay")
 time.append(currentTime)
 
@@ -74,3 +76,72 @@ function displayTask(){
 
 };
 displayTask()
+
+//time display colors
+
+
+if(now > 9){
+  $(".time-one").css("background-color", "grey")
+}else if (now < 9){
+  $(".time-one").css("background-color", "blue")
+}else{
+  $(".time-one").css("background-color", "red")
+}
+if(now > 10){
+  $(".time-two").css("background-color", "grey")
+}else if (now < 10){
+  $(".time-two").css("background-color", "blue")
+}else{
+  $(".time-two").css("background-color", "red")
+}
+if(now > 11){
+  $(".time-three").css("background-color", "grey")
+}else if (now < 11){
+  $(".time-three").css("background-color", "blue")
+}else{
+  $(".time-three").css("background-color", "red")
+}
+if(now > 12){
+  $(".time-four").css("background-color", "grey")
+}else if (now < 12){
+  $(".time-four").css("background-color", "blue")
+}else{
+  $(".time-four").css("background-color", "red")
+}
+if(now > 13){
+  $(".time-five").css("background-color", "grey")
+}else if (now < 13){
+  $(".time-five").css("background-color", "blue")
+}else{
+  $(".time-five").css("background-color", "red")
+}
+if(now > 14){
+  $(".time-six").css("background-color", "grey")
+}else if (now < 13){
+  $(".time-six").css("background-color", "blue")
+}else{
+  $(".time-six").css("background-color", "red")
+}
+if(now > 15){
+  $(".time-seven").css("background-color", "grey")
+}else if (now < 15){
+  $(".time-seven").css("background-color", "blue")
+}else{
+  $(".time-seven").css("background-color", "red")
+}
+if(now > 16){
+  $(".time-eight").css("background-color", "grey")
+}else if (now < 16){
+  $(".time-eight").css("background-color", "blue")
+}else{
+  $(".time-eight").css("background-color", "red")
+}
+if(now > 17){
+  $(".time-nine").css("background-color", "grey")
+}else if (now < 17){
+  $(".time-nine").css("background-color", "blue")
+}else{
+  $(".time-nine").css("background-color", "red")
+}
+
+
